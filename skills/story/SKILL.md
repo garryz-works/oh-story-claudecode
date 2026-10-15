@@ -101,7 +101,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 路由前先检查当前项目状态：
 
 - **无项目目录**（没有包含 `追踪/` 或 `设定/` 的书名目录，也没有同时有 `正文.md` 与 `小节大纲.md`（或 `设定.md`）的短篇目录）：
-  - 如果用户要写作，下一步是先运行 `/story-setup` 初始化环境（Codex 中用 `$story-setup`）
+  - 创建写作项目时先运行 `/story-setup` 初始化环境（Codex 中用 `$story-setup`）；只讨论结构或选题时直接路由
   - 如果用户要扫榜/拆文，直接路由
 - **已有项目**：读取 `.story-deployed`，按目标 skill 的环境检查继续；查询沿用上方降级，导入保留串行选项。需要初始化或补部署时运行 `/story-setup`（Codex 中用 `$story-setup`）。
 
